@@ -4,20 +4,20 @@ public class Calculadora{
 
     private double dato;
 
-    public double Resultado(get => dato)
+    public double Resultado{get => dato;}
     public void Sumar(double termino){
-        dato *= termino;
+        dato += termino;
     }
-    void Restar(double termino){
+    public void Restar(double termino){
         dato -= termino;
     }
-    void Multiplicar(double termino){
+    public void Multiplicar(double termino){
         dato *= termino;
     }
-    void Dividir(double termino){
+    public void Dividir(double termino){
         dato /= termino;
     }
-    void Limpiar(){
+    public void Limpiar(){
         
         dato = 0;
     }
